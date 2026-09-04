@@ -1,0 +1,114 @@
+{
+  "@@locale": "fr",
+  "appTitle": "Taskly",
+  "appTagline": "Organise ta journée, accomplis plus",
+  "navHome": "Aujourd'hui",
+  "navTasks": "Tâches",
+  "navStats": "Stats",
+  "navSettings": "Réglages",
+
+  "homeGreeting": "Bonne journée",
+  "addTask": "Nouvelle tâche",
+  "editTask": "Modifier la tâche",
+  "save": "Enregistrer",
+  "cancel": "Annuler",
+  "delete": "Supprimer",
+  "edit": "Modifier",
+  "complete": "Terminer",
+  "markDone": "Marquer comme fait",
+  "unmarkDone": "Marquer comme à faire",
+  "pending": "À faire",
+  "completed": "Terminée",
+  "overdue": "En retard",
+
+  "tasksToDo": "Choses à faire",
+  "todayTitle": "Aujourd'hui",
+  "allTasksTitle": "Toutes les tâches",
+  "noTasks": "Aucune tâche",
+  "noTasksHint": "Touche + pour créer ta première tâche",
+  "noResults": "Aucun résultat",
+  "noResultsHint": "Modifie ta recherche ou tes filtres",
+
+  "searchPlaceholder": "Rechercher des tâches…",
+  "filters": "Filtres",
+  "sortBy": "Trier par",
+  "sortDate": "Date",
+  "sortPriority": "Priorité",
+  "sortTitle": "Titre",
+  "sortCreated": "Création",
+  "ascending": "Croissant",
+  "descending": "Décroissant",
+  "statusAll": "Toutes",
+  "statusPending": "À faire",
+  "statusCompleted": "Terminées",
+  "statusOverdue": "En retard",
+  "statusToday": "Aujourd'hui",
+  "priorityAll": "Toutes priorités",
+  "clearFilters": "Effacer",
+
+  "taskTitle": "Titre de la tâche",
+  "taskDescription": "Description (optionnelle)",
+  "taskDate": "Date et heure",
+  "taskCategory": "Catégorie",
+  "taskPriority": "Priorité",
+  "setReminder": "Rappel",
+
+  "priorityLow": "Basse",
+  "priorityMedium": "Moyenne",
+  "priorityHigh": "Haute",
+  "priorityUrgent": "Urgente",
+
+  "categoryPersonal": "Personnel",
+  "categoryWork": "Travail",
+  "categoryHealth": "Santé",
+  "categoryShopping": "Courses",
+  "categoryStudies": "Études",
+  "categoryOther": "Autre",
+
+  "statsTitle": "Statistiques",
+  "statsTotal": "Total",
+  "statsDone": "Faites",
+  "statsActive": "Actives",
+  "statsOverdue": "En retard",
+  "progressLabel": "Progression",
+  "statsByCategory": "Par catégorie",
+  "statsByPriority": "Par priorité",
+
+  "settingsTitle": "Réglages",
+  "settingsAppearance": "Apparence",
+  "language": "Langue",
+  "darkMode": "Mode sombre",
+  "notifications": "Notifications",
+  "remindersEnabled": "Activer les rappels",
+  "settingsSupport": "Aide & support",
+  "supportTitle": "Besoin d'aide ?",
+  "supportDescription": "Vous rencontrez un problème avec Taskly ? Contactez notre équipe de support, nous serons ravis de vous aider.",
+  "supportEmailLabel": "E-mail du support",
+  "supportEmail": "l.akalete20@gmail.com",
+  "supportContactUs": "Contacter le support",
+  "supportEmailCopied": "E-mail du support copié dans le presse-papiers",
+
+  "focusTitle": "Focus",
+  "focusHint": "Concentre-toi sur une tâche à la fois",
+  "focusStart": "Commencer",
+  "focusDone": "Bravo !",
+  "focusNext": "Tâche suivante",
+  "minutesShort": "min",
+
+  "tasksCount": "{count, plural, =0{Aucune tâche} =1{1 tâche} other{{count} tâches}}",
+  "@tasksCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "completedCount": "{count, plural, =1{1 faite} other{{count} faites}}",
+  "@completedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
