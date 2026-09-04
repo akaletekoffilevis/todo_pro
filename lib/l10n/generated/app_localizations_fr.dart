@@ -293,4 +293,45 @@ class AppLocalizationsFr extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get loginTitle => 'Bienvenue sur Taskly';
+
+  @override
+  String get loginSubtitle =>
+      'Connecte-toi pour synchroniser et sécuriser tes tâches sur tous tes appareils.';
+
+  @override
+  String get loginWithGoogle => 'Continuer avec Google';
+
+  @override
+  String get loginPrivacy =>
+      'En continuant, tu acceptes nos conditions et notre politique de confidentialité. Tes données restent privées et visibles uniquement par toi.';
+
+  @override
+  String get googleSignInError =>
+      'Échec de la connexion. Vérifie ta connexion internet et réessaie.';
+
+  @override
+  String get settingsAccount => 'Compte';
+
+  @override
+  String get signedInAs => 'Connecté en tant que';
+
+  @override
+  String get signOut => 'Se déconnecter';
+
+  @override
+  String get cloudSync => 'Synchronisation cloud';
+
+  @override
+  String get cloudSyncEnabled =>
+      'Tes tâches sont synchronisées de manière sécurisée sur ton compte Firebase.';
+
+  @override
+  String get cloudSyncOffline =>
+      'Mode hors-ligne : les tâches sont stockées localement sur cet appareil.';
+
+  @override
+  String get anonymousUser => 'Utilisateur inconnu';
 }

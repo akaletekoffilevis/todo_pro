@@ -5,6 +5,23 @@ Toutes les modifications notables de **Taskly (todo_pro)**.
 Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/),
 et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
+## [1.1.0] - 2026-09-04
+
+### Ajouté
+- **Backend réel Firebase** : authentification Google (création de compte + connexion) via `firebase_core`, `firebase_auth` et `google_sign_in`.
+- **Synchronisation Cloud Firestore** : chaque utilisateur dispose de sa propre collection privée de tâches (`users/<uid>/tasks`) et n'accède qu'à ses données.
+- **Mode hors-ligne** : cache local Hive par utilisateur avec relecture automatique si Firestore est indisponible.
+- **Écran de connexion** premium avec bouton « Continuer avec Google ».
+- **Section Compte** dans les Réglages : avatar, email, statut de synchronisation, déconnexion.
+- **AuthGate** : bascule automatique connexion ↔ application selon l'état d'authentification (avec fallback local sur desktop Linux).
+- **isolation par utilisateur testée** : unit tests du cache Hive `users/<uid>` (29 tests au total).
+
+### Amélioré
+- Architecture : `AuthService`, `AuthGate`, `LoginController`, `FirebaseTaskDatasource`, `FirebaseTaskRepository`, `CloudScope`.
+
+### Configuration requise
+- Remplacer `lib/firebase_options.dart` par la sortie de `flutterfire configure`, activer la connexion Google dans la console Firebase et fournir `google-services.json` (Android) / `GoogleService-Info.plist` (iOS).
+
 ## [1.0.0] - 2026-09-04
 
 ### Ajouté

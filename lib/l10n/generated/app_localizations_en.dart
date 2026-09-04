@@ -292,4 +292,45 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get loginTitle => 'Welcome to Taskly';
+
+  @override
+  String get loginSubtitle =>
+      'Sign in to sync and secure your tasks across all your devices.';
+
+  @override
+  String get loginWithGoogle => 'Continue with Google';
+
+  @override
+  String get loginPrivacy =>
+      'By continuing, you agree to our Terms and Privacy Policy. Your data stays private and visible only to you.';
+
+  @override
+  String get googleSignInError =>
+      'Sign-in failed. Please check your connection and try again.';
+
+  @override
+  String get settingsAccount => 'Account';
+
+  @override
+  String get signedInAs => 'Signed in as';
+
+  @override
+  String get signOut => 'Sign out';
+
+  @override
+  String get cloudSync => 'Cloud sync';
+
+  @override
+  String get cloudSyncEnabled =>
+      'Your tasks are synced securely to your Firebase account.';
+
+  @override
+  String get cloudSyncOffline =>
+      'Offline mode: tasks are stored locally on this device.';
+
+  @override
+  String get anonymousUser => 'Unknown user';
 }

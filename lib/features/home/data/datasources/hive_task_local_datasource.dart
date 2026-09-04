@@ -36,6 +36,32 @@ class HiveTaskLocalDatasource {
     await _box.delete(id);
   }
 
+  // ── Cache local par utilisateur (mode cloud) ──────────────────────────
+
+  Future<Box> _open(String boxName) => Hive.openBox('tasks_$boxName');
+
+  Future<void> cacheAll(String boxName, List<Task> tasks) async {
+    final box = await _open(boxName);
+    for (final task in tasks) {
+      await box.put(task.id, _toMap(task));
+    }
+  }
+
+  Future<List<Task>> getAllCached(String boxName) async {
+    final box = await _open(boxName);
+    return box.values.cast<Map>().map(_fromMap).toList();
+  }
+
+  Future<void> putIn(String boxName, Task task) async {
+    final box = await _open(boxName);
+    await box.put(task.id, _toMap(task));
+  }
+
+  Future<void> deleteFrom(String boxName, String id) async {
+    final box = await _open(boxName);
+    await box.delete(id);
+  }
+
   Map _toMap(Task task) {
     return {
       _keyId: task.id,

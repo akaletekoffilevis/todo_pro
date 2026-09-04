@@ -631,6 +631,78 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'{count, plural, =1{1 done} other{{count} done}}'**
   String completedCount(int count);
+
+  /// No description provided for @loginTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Welcome to Taskly'**
+  String get loginTitle;
+
+  /// No description provided for @loginSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in to sync and secure your tasks across all your devices.'**
+  String get loginSubtitle;
+
+  /// No description provided for @loginWithGoogle.
+  ///
+  /// In en, this message translates to:
+  /// **'Continue with Google'**
+  String get loginWithGoogle;
+
+  /// No description provided for @loginPrivacy.
+  ///
+  /// In en, this message translates to:
+  /// **'By continuing, you agree to our Terms and Privacy Policy. Your data stays private and visible only to you.'**
+  String get loginPrivacy;
+
+  /// No description provided for @googleSignInError.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign-in failed. Please check your connection and try again.'**
+  String get googleSignInError;
+
+  /// No description provided for @settingsAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Account'**
+  String get settingsAccount;
+
+  /// No description provided for @signedInAs.
+  ///
+  /// In en, this message translates to:
+  /// **'Signed in as'**
+  String get signedInAs;
+
+  /// No description provided for @signOut.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign out'**
+  String get signOut;
+
+  /// No description provided for @cloudSync.
+  ///
+  /// In en, this message translates to:
+  /// **'Cloud sync'**
+  String get cloudSync;
+
+  /// No description provided for @cloudSyncEnabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Your tasks are synced securely to your Firebase account.'**
+  String get cloudSyncEnabled;
+
+  /// No description provided for @cloudSyncOffline.
+  ///
+  /// In en, this message translates to:
+  /// **'Offline mode: tasks are stored locally on this device.'**
+  String get cloudSyncOffline;
+
+  /// No description provided for @anonymousUser.
+  ///
+  /// In en, this message translates to:
+  /// **'Unknown user'**
+  String get anonymousUser;
 }
 
 class _AppLocalizationsDelegate

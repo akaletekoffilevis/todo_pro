@@ -6,7 +6,6 @@
   "navTasks": "Tâches",
   "navStats": "Stats",
   "navSettings": "Réglages",
-
   "homeGreeting": "Bonne journée",
   "addTask": "Nouvelle tâche",
   "editTask": "Modifier la tâche",
@@ -20,7 +19,6 @@
   "pending": "À faire",
   "completed": "Terminée",
   "overdue": "En retard",
-
   "tasksToDo": "Choses à faire",
   "todayTitle": "Aujourd'hui",
   "allTasksTitle": "Toutes les tâches",
@@ -28,7 +26,6 @@
   "noTasksHint": "Touche + pour créer ta première tâche",
   "noResults": "Aucun résultat",
   "noResultsHint": "Modifie ta recherche ou tes filtres",
-
   "searchPlaceholder": "Rechercher des tâches…",
   "filters": "Filtres",
   "sortBy": "Trier par",
@@ -45,26 +42,22 @@
   "statusToday": "Aujourd'hui",
   "priorityAll": "Toutes priorités",
   "clearFilters": "Effacer",
-
   "taskTitle": "Titre de la tâche",
   "taskDescription": "Description (optionnelle)",
   "taskDate": "Date et heure",
   "taskCategory": "Catégorie",
   "taskPriority": "Priorité",
   "setReminder": "Rappel",
-
   "priorityLow": "Basse",
   "priorityMedium": "Moyenne",
   "priorityHigh": "Haute",
   "priorityUrgent": "Urgente",
-
   "categoryPersonal": "Personnel",
   "categoryWork": "Travail",
   "categoryHealth": "Santé",
   "categoryShopping": "Courses",
   "categoryStudies": "Études",
   "categoryOther": "Autre",
-
   "statsTitle": "Statistiques",
   "statsTotal": "Total",
   "statsDone": "Faites",
@@ -73,7 +66,6 @@
   "progressLabel": "Progression",
   "statsByCategory": "Par catégorie",
   "statsByPriority": "Par priorité",
-
   "settingsTitle": "Réglages",
   "settingsAppearance": "Apparence",
   "language": "Langue",
@@ -87,14 +79,12 @@
   "supportEmail": "l.akalete20@gmail.com",
   "supportContactUs": "Contacter le support",
   "supportEmailCopied": "E-mail du support copié dans le presse-papiers",
-
   "focusTitle": "Focus",
   "focusHint": "Concentre-toi sur une tâche à la fois",
   "focusStart": "Commencer",
   "focusDone": "Bravo !",
   "focusNext": "Tâche suivante",
   "minutesShort": "min",
-
   "tasksCount": "{count, plural, =0{Aucune tâche} =1{1 tâche} other{{count} tâches}}",
   "@tasksCount": {
     "placeholders": {
@@ -110,5 +100,17 @@
         "type": "int"
       }
     }
-  }
+  },
+  "loginTitle": "Bienvenue sur Taskly",
+  "loginSubtitle": "Connecte-toi pour synchroniser et sécuriser tes tâches sur tous tes appareils.",
+  "loginWithGoogle": "Continuer avec Google",
+  "loginPrivacy": "En continuant, tu acceptes nos conditions et notre politique de confidentialité. Tes données restent privées et visibles uniquement par toi.",
+  "googleSignInError": "Échec de la connexion. Vérifie ta connexion internet et réessaie.",
+  "settingsAccount": "Compte",
+  "signedInAs": "Connecté en tant que",
+  "signOut": "Se déconnecter",
+  "cloudSync": "Synchronisation cloud",
+  "cloudSyncEnabled": "Tes tâches sont synchronisées de manière sécurisée sur ton compte Firebase.",
+  "cloudSyncOffline": "Mode hors-ligne : les tâches sont stockées localement sur cet appareil.",
+  "anonymousUser": "Utilisateur inconnu"
 }

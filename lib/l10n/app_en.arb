@@ -4,12 +4,10 @@
   "appTitleDescription": "Application title",
   "appTagline": "Organize your day, achieve more",
   "appTaglineDescription": "Home tagline",
-
   "navHome": "Today",
   "navTasks": "Tasks",
   "navStats": "Stats",
   "navSettings": "Settings",
-
   "homeGreeting": "Good day",
   "addTask": "New task",
   "editTask": "Edit task",
@@ -23,7 +21,6 @@
   "pending": "Pending",
   "completed": "Completed",
   "overdue": "Overdue",
-
   "tasksToDo": "Things to do",
   "todayTitle": "Today",
   "allTasksTitle": "All tasks",
@@ -31,7 +28,6 @@
   "noTasksHint": "Tap + to create your first task",
   "noResults": "No results found",
   "noResultsHint": "Try changing your search or filters",
-
   "searchPlaceholder": "Search tasks…",
   "filters": "Filters",
   "sortBy": "Sort by",
@@ -48,26 +44,22 @@
   "statusToday": "Today",
   "priorityAll": "All priorities",
   "clearFilters": "Clear",
-
   "taskTitle": "Task title",
   "taskDescription": "Description (optional)",
   "taskDate": "Date & time",
   "taskCategory": "Category",
   "taskPriority": "Priority",
   "setReminder": "Reminder",
-
   "priorityLow": "Low",
   "priorityMedium": "Medium",
   "priorityHigh": "High",
   "priorityUrgent": "Urgent",
-
   "categoryPersonal": "Personal",
   "categoryWork": "Work",
   "categoryHealth": "Health",
   "categoryShopping": "Shopping",
   "categoryStudies": "Studies",
   "categoryOther": "Other",
-
   "statsTitle": "Statistics",
   "statsTotal": "Total",
   "statsDone": "Done",
@@ -76,7 +68,6 @@
   "progressLabel": "Progress",
   "statsByCategory": "By category",
   "statsByPriority": "By priority",
-
   "settingsTitle": "Settings",
   "settingsAppearance": "Appearance",
   "language": "Language",
@@ -90,14 +81,12 @@
   "supportEmail": "l.akalete20@gmail.com",
   "supportContactUs": "Contact support",
   "supportEmailCopied": "Support email copied to clipboard",
-
   "focusTitle": "Focus",
   "focusHint": "Focus on one task at a time",
   "focusStart": "Start",
   "focusDone": "Well done!",
   "focusNext": "Next task",
   "minutesShort": "min",
-
   "tasksCount": "{count, plural, =0{No tasks} =1{1 task} other{{count} tasks}}",
   "@tasksCount": {
     "placeholders": {
@@ -113,5 +102,17 @@
         "type": "int"
       }
     }
-  }
+  },
+  "loginTitle": "Welcome to Taskly",
+  "loginSubtitle": "Sign in to sync and secure your tasks across all your devices.",
+  "loginWithGoogle": "Continue with Google",
+  "loginPrivacy": "By continuing, you agree to our Terms and Privacy Policy. Your data stays private and visible only to you.",
+  "googleSignInError": "Sign-in failed. Please check your connection and try again.",
+  "settingsAccount": "Account",
+  "signedInAs": "Signed in as",
+  "signOut": "Sign out",
+  "cloudSync": "Cloud sync",
+  "cloudSyncEnabled": "Your tasks are synced securely to your Firebase account.",
+  "cloudSyncOffline": "Offline mode: tasks are stored locally on this device.",
+  "anonymousUser": "Unknown user"
 }
