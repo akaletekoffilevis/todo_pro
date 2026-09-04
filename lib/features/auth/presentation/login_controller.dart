@@ -7,5 +7,22 @@ class LoginController {
 
   LoginController(this.authService);
 
-  Future<AppUser> signIn() => authService.signInWithGoogle();
+  Future<AppUser> registerWithEmail({
+    required String email,
+    required String password,
+    String? displayName,
+  }) {
+    return authService.registerWithEmail(
+      email: email,
+      password: password,
+      displayName: displayName,
+    );
+  }
+
+  Future<AppUser> signInWithEmail({
+    required String email,
+    required String password,
+  }) {
+    return authService.signInWithEmail(email: email, password: password);
+  }
 }

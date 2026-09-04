@@ -112,5 +112,18 @@
   "cloudSync": "Synchronisation cloud",
   "cloudSyncEnabled": "Tes tâches sont synchronisées de manière sécurisée sur ton compte Firebase.",
   "cloudSyncOffline": "Mode hors-ligne : les tâches sont stockées localement sur cet appareil.",
-  "anonymousUser": "Utilisateur inconnu"
+  "anonymousUser": "Utilisateur inconnu",
+  "loginName": "Nom (optionnel)",
+  "loginNameRequired": "Merci d'indiquer votre nom",
+  "loginEmail": "E-mail",
+  "loginEmailRequired": "Saisissez un e-mail valide",
+  "loginPassword": "Mot de passe",
+  "loginPasswordShort": "Au moins 6 caractères",
+  "loginShowPassword": "Afficher le mot de passe",
+  "loginAction": "Se connecter",
+  "loginCreateAction": "Créer un compte",
+  "loginCreateSubtitle": "Créez votre compte pour synchroniser et sécuriser vos tâches sur tous vos appareils.",
+  "loginNoAccount": "Pas encore de compte ? Créer-en un",
+  "loginHaveAccount": "Déjà un compte ? Se connecter",
+  "authError": "Échec de l'authentification. Vérifiez votre e-mail / mot de passe et réessayez."
 }

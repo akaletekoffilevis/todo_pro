@@ -48,9 +48,10 @@ Future<void> main() async {
   AuthService? authService;
   if (_firebaseSupported) {
     try {
-      await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+      await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      );
       authService = AuthService();
-      await authService.initialize();
     } catch (_) {
       authService = null;
     }

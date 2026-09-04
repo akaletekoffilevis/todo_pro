@@ -26,11 +26,11 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyPLACEHOLDER_ANDROID',
-    appId: '1:000000000000:android:0000000000000000',
-    messagingSenderId: '000000000000',
-    projectId: 'todo-pro-placeholder',
-    storageBucket: 'todo-pro-placeholder.appspot.com',
+    apiKey: 'AIzaSyC9Qf-Bqsn4nNWP0pl5o71MzcHFOsysQ2Y',
+    appId: '1:82389888030:android:08c9aaecaaa9618816d20f',
+    messagingSenderId: '82389888030',
+    projectId: 'test-fe9eb',
+    storageBucket: 'test-fe9eb.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(

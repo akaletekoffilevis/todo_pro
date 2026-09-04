@@ -114,5 +114,18 @@
   "cloudSync": "Cloud sync",
   "cloudSyncEnabled": "Your tasks are synced securely to your Firebase account.",
   "cloudSyncOffline": "Offline mode: tasks are stored locally on this device.",
-  "anonymousUser": "Unknown user"
+  "anonymousUser": "Unknown user",
+  "loginName": "Name (optional)",
+  "loginNameRequired": "Please enter your name",
+  "loginEmail": "Email",
+  "loginEmailRequired": "Enter a valid email",
+  "loginPassword": "Password",
+  "loginPasswordShort": "At least 6 characters",
+  "loginShowPassword": "Show password",
+  "loginAction": "Sign in",
+  "loginCreateAction": "Create account",
+  "loginCreateSubtitle": "Create your account to sync and secure your tasks across all your devices.",
+  "loginNoAccount": "No account yet? Create one",
+  "loginHaveAccount": "Already have an account? Sign in",
+  "authError": "Authentication failed. Check your email/password and try again."
 }

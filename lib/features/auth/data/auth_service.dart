@@ -1,12 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 
 import '../domain/app_user.dart';
 
-/// Service d'authentification Firebase (création de compte + connexion via Google).
+/// Service d'authentification Firebase (création de compte + connexion
+/// par e-mail / mot de passe — fonctionne sans configuration OAuth Android).
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
-  final GoogleSignIn _googleSignIn = GoogleSignIn.instance;
 
   AppUser? get currentUser => _toUser(_auth.currentUser);
 
@@ -14,33 +13,39 @@ class AuthService {
   Stream<AppUser?> get authStateChanges =>
       _auth.authStateChanges().map(_toUser);
 
-  /// Connexion / création de compte avec Google.
-  ///
-  /// À appeler une seule fois au démarrage avant tout autre usage.
-  Future<void> initialize() async {
-    await _googleSignIn.initialize();
-  }
-
-  Future<AppUser> signInWithGoogle() async {
-    final googleAccount = await _googleSignIn.authenticate();
-    final authentication = googleAccount.authentication;
-
-    final credential = GoogleAuthProvider.credential(
-      idToken: authentication.idToken,
+  /// Création d'un compte.
+  Future<AppUser> registerWithEmail({
+    required String email,
+    required String password,
+    String? displayName,
+  }) async {
+    final credential = await _auth.createUserWithEmailAndPassword(
+      email: email.trim(),
+      password: password,
     );
-
-    final userCredential = await _auth.signInWithCredential(credential);
-    final user = _toUser(userCredential.user);
-    if (user == null) {
-      throw Exception('googleSignInFailed');
+    if (displayName != null && displayName.isNotEmpty) {
+      await credential.user?.updateDisplayName(displayName);
     }
+    final user = _toUser(credential.user);
+    if (user == null) throw Exception('authFailed');
     return user;
   }
 
-  Future<void> signOut() async {
-    await _googleSignIn.signOut();
-    await _auth.signOut();
+  /// Connexion à un compte existant.
+  Future<AppUser> signInWithEmail({
+    required String email,
+    required String password,
+  }) async {
+    final credential = await _auth.signInWithEmailAndPassword(
+      email: email.trim(),
+      password: password,
+    );
+    final user = _toUser(credential.user);
+    if (user == null) throw Exception('authFailed');
+    return user;
   }
+
+  Future<void> signOut() => _auth.signOut();
 
   AppUser? _toUser(User? user) {
     if (user == null) return null;

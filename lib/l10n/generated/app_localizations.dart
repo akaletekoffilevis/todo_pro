@@ -703,6 +703,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Unknown user'**
   String get anonymousUser;
+
+  /// No description provided for @loginName.
+  ///
+  /// In en, this message translates to:
+  /// **'Name (optional)'**
+  String get loginName;
+
+  /// No description provided for @loginNameRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Please enter your name'**
+  String get loginNameRequired;
+
+  /// No description provided for @loginEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get loginEmail;
+
+  /// No description provided for @loginEmailRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid email'**
+  String get loginEmailRequired;
+
+  /// No description provided for @loginPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get loginPassword;
+
+  /// No description provided for @loginPasswordShort.
+  ///
+  /// In en, this message translates to:
+  /// **'At least 6 characters'**
+  String get loginPasswordShort;
+
+  /// No description provided for @loginShowPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Show password'**
+  String get loginShowPassword;
+
+  /// No description provided for @loginAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get loginAction;
+
+  /// No description provided for @loginCreateAction.
+  ///
+  /// In en, this message translates to:
+  /// **'Create account'**
+  String get loginCreateAction;
+
+  /// No description provided for @loginCreateSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Create your account to sync and secure your tasks across all your devices.'**
+  String get loginCreateSubtitle;
+
+  /// No description provided for @loginNoAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'No account yet? Create one'**
+  String get loginNoAccount;
+
+  /// No description provided for @loginHaveAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account? Sign in'**
+  String get loginHaveAccount;
+
+  /// No description provided for @authError.
+  ///
+  /// In en, this message translates to:
+  /// **'Authentication failed. Check your email/password and try again.'**
+  String get authError;
 }
 
 class _AppLocalizationsDelegate

@@ -333,4 +333,45 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get anonymousUser => 'Unknown user';
+
+  @override
+  String get loginName => 'Name (optional)';
+
+  @override
+  String get loginNameRequired => 'Please enter your name';
+
+  @override
+  String get loginEmail => 'Email';
+
+  @override
+  String get loginEmailRequired => 'Enter a valid email';
+
+  @override
+  String get loginPassword => 'Password';
+
+  @override
+  String get loginPasswordShort => 'At least 6 characters';
+
+  @override
+  String get loginShowPassword => 'Show password';
+
+  @override
+  String get loginAction => 'Sign in';
+
+  @override
+  String get loginCreateAction => 'Create account';
+
+  @override
+  String get loginCreateSubtitle =>
+      'Create your account to sync and secure your tasks across all your devices.';
+
+  @override
+  String get loginNoAccount => 'No account yet? Create one';
+
+  @override
+  String get loginHaveAccount => 'Already have an account? Sign in';
+
+  @override
+  String get authError =>
+      'Authentication failed. Check your email/password and try again.';
 }
